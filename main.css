@@ -1,0 +1,321 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: blue;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  margin-top: 125px;
+}
+
+#nav ul {
+  list-style: none;
+}
+#nav ul li {
+  background-color: #35424a;
+  border: 1px solid #fff;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+}
+#nav ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+#nav ul li a:hover {
+  background-color: #e8491d;
+}
+#nav ul ul {
+  display: none;
+}
+#nav ul li:hover > ul {
+  display: block;
+}
+
+
+#c1 {
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#c2 {
+  margin-right: 40px;
+  margin-left: 15px;
+  color: black;
+  font-family: "맑은 고딕";
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+#c {
+  background-color: white;
+  border: 2px solid;
+  margin: 16px;
+  margin-top: 50px;
+}
+#c1 a {
+  font-style: oblique;
+  color: blue;
+  text-decoration: underline;
+}
+#ch2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: oblique;
+  color: blue;
+}
+
+#m {
+  background-color: white;
+  border: 2px solid;
+  margin: 16px;
+  margin-top: 50px;
+}
+#m1 a {
+  font-style: oblique;
+  color: blue;
+  text-decoration: underline;
+}
+
+#ma2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  text-decoration: none;
+  font-style: oblique;
+  color: blue;
+}
+#m1 {
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  font-size: 20px;
+}
+#m2 {
+  margin-right: 40px;
+  margin-left: 15px;
+  color: black;
+  font-family: "맑은 고딕";
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#t {
+  background-color: white;
+  border: 2px solid;
+  margin: 16px;
+  margin-top: 50px;
+}
+
+#te2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  text-decoration: none;
+  font-style: oblique;
+  color: blue;
+}
+.player{
+  border:none;
+  border:0px;
+  margin:0px;
+  margin-top: 15px;
+  padding:0px;
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.player ul{
+  background: rgb(109,109,109);
+  height:50px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.player li{
+  float:left;
+  padding:0px;
+}
+
+.player li a{
+  background: rgb(109,109,109);
+  color:#cccccc;
+  display:block;
+  font-weight:normal;
+  line-height:50px;
+  margin:0px;
+  padding:0px 25px;
+  text-align:center;
+  text-decoration:none;
+}
+
+.player li a:hover, .player ul li:hover a{
+  background: rgb(71,71,71);
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+.player li ul{
+  background: rgb(109,109,109);
+  display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+  height:auto;
+  padding:0px;
+  margin:0px;
+  border:0px;
+  position:absolute;
+  width:200px;
+  z-index:200;
+  /*top:1em;
+  /*left:0;*/
+}
+
+.player li:hover ul{
+  display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.player li li {
+  background: rgb(109,109,109);
+  display:block;
+  float:none;
+  margin:0px;
+  padding:0px;
+  width:200px;
+}
+
+.player li:hover li a{
+  background:none;
+}
+
+.player li ul a{
+  display:block;
+  height:50px;
+  font-size:12px;
+  font-style:normal;
+  margin:0px;
+  padding:0px 10px 0px 15px;
+  text-align:left;
+}
+
+.player li ul a:hover, .player li ul li:hover a{
+  background: rgb(71,71,71);
+  border:0px;
+  color:#ffffff;
+  text-decoration:none;
+}
+
+.player p{
+  clear:left;
+}
+
+
+#map {
+  height: 340px;
+  width: 600px;
+}
+
+#h {
+  background-color: white;
+  border: 2px solid;
+  margin: 16px;
+  margin-top: 50px;
+}
+
+#ho2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  text-decoration: none;
+  font-style: oblique;
+  color: blue;
+}
+#h1 {
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "맑은 고딕";
+  font-size: 15px;
+}
+
+.ETC1title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  text-decoration: none;
+  font-style: oblique;
+  color: blue;
+}
+
+#ETC1 {
+  background-color: white;
+  border: 2px solid;
+  margin: 16px;
+  margin-top: 50px;
+}
+
+#ETC1main {
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "맑은 고딕";
+  font-size: 15px;
+}
+#ETC1etc {
+  color: blue;
+  font-size: 12px;
+}
+
+
+
+#ETC2 {
+  background-color: white;
+  border: 2px solid;
+  margin: 16px;
+  margin-top: 50px;
+}
+
+.ETC2title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "맑은 고딕";
+  font-weight: bold;
+  text-decoration: none;
+  font-style: oblique;
+  color: blue;
+}
+
+#ETC2main {
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "맑은 고딕";
+  font-size: 15px;
+}

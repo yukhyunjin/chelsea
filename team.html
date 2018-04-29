@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Chelsea FC</title>
+  </head>
+  <body>
+    <h1 class="maintitle"><a href="main.html">Chelsea FC<img src='img/titleside.png' width=30px height=30px></a></h1>
+    <nav id = "nav">
+      <ul>
+        <li><a href="chelsea.html">Chelsea fc</a></li>
+        <li><a href="manager.html">Manager</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="home.html">Home Stadium</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="#">Etc</a>
+          <ul>
+            <li><a href="11-12.html">11-12</a></li>
+            <li><a href="ETC2.html">첼강딱?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id = "t">
+      <h2 id="te2">"첼시의 역사를 만들고 있는 팀의 일원이라는게 자랑스럽다"<br>- 프랭크 램파드 -</h2>
+      <img id="team1" src="img/team.png">
+      <script>
+      var myImage=document.getElementById("team1");
+      var imageArray =["img/team.png", "img/team1.jpg","img/team2.jpg","img/team3.png","img/team4.jpeg"];
+      var imageIndex = 0;
+
+      function changeImage() {
+        myImage.setAttribute("src",imageArray[imageIndex]);
+        imageIndex++;
+        if(imageIndex>=imageArray.length) {
+          imageIndex=0;
+        }
+      }
+      setInterval(changeImage,2000);
+      </script>
+      <div class="player">
+        <ul>
+          <li><a href="#">Goalkeapers</a>
+            <ul>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/thibaut-courtois.html">Thibaut Courtois</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/willy-caballero.html">Willy Cabellero</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Defenders</a>
+            <ul>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/marcos-alonso2.html">Marcos Alonso</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/cesar-azpilicueta.html">Cesar Azpilicueta</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/gary-cahill.html">Gary Cahill(C)</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/andreas-christensen.html">Andreas Chrisrensen</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/david-luiz.html">David Luiz</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/victor-moses2.html">Victor Moses</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Midfielders</a>
+            <ul>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/tiemoue-bakayoko.html">Timoue Bakayoko</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/ross-barkley.html">Ross Barkley</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/danny-drinkwater.html">Danny Drinkwater</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/cesc-fabregas.html">Cesc Fabregas</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/eden-hazard.html">Eden Hazard</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/n-golo-kante.html">N'Golo Kante</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/pedro.html">Pedro</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/willian.html">Willian</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Strikers</a>
+            <ul>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/alvaro-morata.html">Alvaro Morata</a></li>
+              <li><a href="http://korea.chelseafc.com/teams/first-team/olivier-giroud.html">Olivier Giroud</a></li>
+            </ul>
+          </li>
+          <p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+  </body>
+</html>

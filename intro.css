@@ -1,0 +1,60 @@
+h1 {
+  font-family: "맑은고딕","Malgun Gothic",serif;
+  font-style: oblique;
+  font-weight: bolder;
+  color: darkred;
+  padding: 15px 15px;
+  display: inline-block;
+}
+
+body {
+  background-image: url('img/intro.jpg');
+  background-size: auto;
+}
+.introbutton {
+  background-color: #1AAB8A;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 800ms ease all;
+
+  font-weight: bold;
+  font-family: "맑은고딕","Malgun Gothic",serif;
+
+  width: 15%;
+  height: 10%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.introbutton:hover {
+  background: #fff;
+  color: #1AAB8A;
+}
+.introbutton:before,.introbutton:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1AAB8A;
+  transition: 400ms ease all;
+}
+.introbutton:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.introbutton:hover:before, .introbutton:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

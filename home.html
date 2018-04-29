@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Chelsea FC</title>
+  </head>
+  <body>
+    <h1 class="maintitle"><a href="main.html">Chelsea FC<img src='img/titleside.png' width=30px height=30px></a></h1>
+    <nav id = "nav">
+      <ul>
+        <li><a href="chelsea.html">Chelsea fc</a></li>
+        <li><a href="manager.html">Manager</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="home.html">Home Stadium</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="#">Etc</a>
+          <ul>
+            <li><a href="11-12.html">11-12</a></li>
+            <li><a href="ETC2.html">첼강딱?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id = "h">
+      <h2 id="ho2">"첼시는 평범한 클럽이 아니다. 왜냐하면 그들은 세계 최고가 되기를 꿈꾸기 때문이다."<br>- 아브람 그랜트 -</h2>
+      <img id="home1" src="img/home.jpg" border=1 align=left vspace=0 hspace=30>
+      <div id="map"></div>
+     <script>
+       function initMap() {
+         var uluru = {lat: 51.481753, lng: -0.190965};
+         var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 17,
+           center: uluru
+         });
+         var marker = new google.maps.Marker({
+           position: uluru,
+           map: map
+         });
+       }
+     </script>
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-WVj6yYM0auuH8UocAbH2ZP-L8tk3ItA&callback=initMap">
+     </script>
+      <script>
+      var myImage=document.getElementById("home1");
+      var imageArray =["img/home.jpg", "img/home1.jpg","img/home2.jpg","img/home3.jpg"];
+      var imageIndex = 0;
+
+      function changeImage() {
+        myImage.setAttribute("src",imageArray[imageIndex]);
+        imageIndex++;
+        if(imageIndex>=imageArray.length) {
+          imageIndex=0;
+        }
+      }
+      setInterval(changeImage,2000);
+      </script>
+      <h3><br>스탬포드 브릿지(Stamford Bridge)</h3>
+      <p id="h1">
+        첼시 FC의 홈 구장이다. 첼시 창단 이후 현재까지 홈 구장을 옮긴 적은 없다.<br>
+        구장의 별칭인 "The Bridge"는 클럽 서포터의 명칭 중 하나이기도 하다.<br>
+        41,663 명을 수용할 수 있으며 프리미어리그 내에서 여덟 번째로 큰 경기장이다.
+      </p>
+    </div>
+  </body>
+</html>
